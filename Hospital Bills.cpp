@@ -1,4 +1,4 @@
-#include <iostream>
+#include <iostream> //programm is not running
 #include <cmath>
 using namespace std;
 class Hospital{ 
