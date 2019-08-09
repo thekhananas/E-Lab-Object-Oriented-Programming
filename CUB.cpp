@@ -14,11 +14,11 @@ public:
         balance = 0;
         cout << "Zero Balance" << endl;
     }
-    AccBalance(float x)
+    AccBalance(float bal)
     {
-        if (x > 0)
+        if (bal > 0)
             cout << "Positive";
-        else if (x < 0)
+        else if (bal < 0)
             cout << "Negative";
         else
             cout << "Zero";
