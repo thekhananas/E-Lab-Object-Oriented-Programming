@@ -37,7 +37,7 @@ int main()
     obj.input();
     obj2.input();
 
-    obj3 = obj + obj2; //obj3=obj.operator(obj2)
+    obj3 = obj + obj2;
 
     obj3.display();
 

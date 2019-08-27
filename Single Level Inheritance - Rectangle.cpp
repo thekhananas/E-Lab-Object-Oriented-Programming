@@ -2,39 +2,40 @@
 using namespace std;
 class A
 {
-  public:
+public:
   int x;
   void getxval()
   {
-    cin>>x;
+    cin >> x;
   }
 };
 class B
-{ 
-  public:
+{
+public:
   int y;
   void getyval()
   {
-    cin>>y;
+    cin >> y;
   }
 };
-class C: public A,public B
+class C : public A, public B
 {
-   public:
-   int sum,mul;
-   void sum()
-   {
-     sumx+y;
-     cout<<"Sum = "<<sum;
-   }
-   void mul()
-   {
-     mul=x*y;
-     cout<<"Product="<<mul;
-   }
-}obj;
-int main() {
-	obj.sum();
-    obj.mul();
-	return 0;
+public:
+  int sum, mul;
+  void sum()
+  {
+    sumx + y;
+    cout << "Sum = " << sum;
+  }
+  void mul()
+  {
+    mul = x * y;
+    cout << "Product=" << mul;
+  }
+} obj;
+int main()
+{
+  obj.sum();
+  obj.mul();
+  return 0;
 }

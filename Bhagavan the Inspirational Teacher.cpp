@@ -1,5 +1,3 @@
-//test case 7 not passed
-
 #include <iostream>
 #include <string>
 using namespace std;
