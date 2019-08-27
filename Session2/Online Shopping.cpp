@@ -1,4 +1,4 @@
-//test case 7 not passed
+//test case 6 not passed
 #include <iostream>
 using namespace std;
 class item

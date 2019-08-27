@@ -1,6 +1,3 @@
-//Test Case 8 not working
-//Author Pulkit Singh
-
 #include <iostream>
 using namespace std;
 

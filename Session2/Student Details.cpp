@@ -1,27 +1,27 @@
 #include <iostream>
-#include <string>
+#include <string.h>
+
 using namespace std;
 
 class student
 {
-public:
     int roll;
-    string name;
+    char name[30];
     float height, weight;
 
+public:
     student()
     {
-        name = "Bhagavan";
-        roll = 1593;
-        height = 172.5;
-        weight = 60.4;
+        strcpy(name, "Nikhil");
+        roll = 20;
+        height = 165.5;
+        weight = 58.2;
     }
-
-    void readinput()
+    void read()
     {
         cin >> name >> roll >> height >> weight;
     }
-    void displaydata()
+    void display()
     {
         cout << name << " " << roll << " " << height << " " << weight << endl;
     }
@@ -30,9 +30,8 @@ public:
 int main()
 {
     student s1, s2;
-    s1.readinput();
-    s1.displaydata();
-    s2.displaydata();
-
+    s1.read();
+    s1.display();
+    s2.display();
     return 0;
 }
