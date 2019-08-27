@@ -11,12 +11,6 @@ float bill(float medicines,float days)
 int bill(int room, int days)
   { 
      int sum = room*days;
-        float sum = medicines*days; 
-     return sum; 
-  }
-int bill(int room, int days)
-  { 
-     int sum = room*days;
      return sum; 
   }
 }; 
@@ -32,4 +26,3 @@ float sum2=ob.bill(a,b);
     cout<<sum2<<endl;
  return 0;
 }
-    
