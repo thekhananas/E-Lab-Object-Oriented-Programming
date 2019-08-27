@@ -1,5 +1,3 @@
-//Distance
-
 #include <iostream>
 using namespace std;
 
@@ -39,8 +37,3 @@ int main()
     fin.dispDistance();
     return 0;
 }
-
-
-
-//Play with fraction
-
