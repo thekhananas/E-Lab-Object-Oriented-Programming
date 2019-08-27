@@ -1,53 +1,45 @@
-//only test case 4 not working
 #include <iostream>
+#include <string.h>
 
 using namespace std;
 
 class Bank
 {
-    char name[20];
-    char accounttype[20];
-    int acc;
-    int balance, depost, debit;
-
-public:
-    void intial()
-    {
-        cin >> name >> acc >> accounttype >> balance;
-    }
-
-    void deposit()
-    {
-        cin >> depost;
-    }
-
-    void disp()
-    {
-        cout << "NAME=" << name << endl
-             << "ACCNO=" << acc << endl
-             << "TYPE=" << accounttype << endl;
-    }
-
-    void withdraw()
-    {
-        cin >> debit;
-        if (debit < balance + depost)
-        {
-            balance = balance + depost - debit;
-            cout << "BALANCEAMOUNT=" << balance << endl;
-        }
-        else if (debit > balance + depost)
-        {
-            cout << "Insufficient amount" << endl;
-        }
-    }
+  char name[40];
+  char accounttype[5];
+  int acc;
+  int balance;
+  public:
+  void initial(){
+    cin>>name;
+    cin>>acc;
+    cin>>accounttype;
+    cin>>balance;
+  }
+  void deposit() {
+    int x;
+    cin>>x;
+    balance+=x;
+  }
+  void withdraw() {
+    int y;
+    cin>>y;
+    if(y>balance) cout<<"Insufficient amount"<<endl;
+    else balance-=y;
+  }
+  void disp() {
+    cout<<"NAME="<<name<<endl;
+    cout<<"ACCNO="<<acc<<endl;
+    cout<<"TYPE="<<accounttype<<endl;
+    cout<<"BALANCEAMOUNT="<<balance;
+  }
 };
-int main()
-{
-    Bank obj;
-    obj.intial();
-    obj.deposit();
-    obj.disp();
-    obj.withdraw();
-    return 0;
+
+int main() {
+  Bank obj;
+  obj.initial();
+  obj.deposit();
+  obj.withdraw();
+  obj.disp();
+  return 0;
 }
