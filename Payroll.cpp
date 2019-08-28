@@ -11,7 +11,7 @@ public:
     cin >> name >> gender >> age >> salary;
   }
 };
-class inheritedclass : public SingleInheritance
+class inheritedclass:public SingleInheritance
 {
 public:
   void display()
