@@ -1,0 +1,41 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+class profit
+{
+  public:
+  double p;
+  profit()
+  {
+    p=0;
+  }
+  
+  profit(int income,int expenses)
+  {
+    float a=income-expenses;
+    //cout<<a<<endl;
+    float b=a/expenses;
+    //cout<<b<<endl;
+    float c=b*100;
+    //cout<<c<<endl;
+   p=c; 
+    cout<<fixed<<setprecision(2)<<p<<"%"<<endl;
+  }
+};
+
+class TestClass
+{
+  public:
+  TestClass(int i, int e)
+  {
+    profit share(i,e);
+  }
+};
+
+int main() {
+	int x,y;
+  cin>>x>>y;
+  TestClass obj(x,y);
+	return 0;
+}
