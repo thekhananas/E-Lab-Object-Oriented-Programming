@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class StudentData{
+  public:
+  		string stuName;
+  
+  StudentData(){
+    stuName = "New Student";
+  }
+  
+  void readinput()
+    {
+        cin >> stuName;
+  	}
+    
+   void display()
+   {
+     cout<<"Student Name is: "<< stuName <<endl;
+   }
+};
+  
+int main() {
+	StudentData myobj,myobj2;
+  	myobj2.readinput();
+  	myobj.display();
+  	myobj2.display();
+	return 0;
+}
+    
