@@ -1,46 +1,47 @@
-//Bank
-
 #include <iostream>
+#include<string.h>
 using namespace std;
 class Bank
 {
-public:
-    string name;
-    int id;
-    void get()
-    {
-        cin >> name >> id;
-    }
-};
+  public:
+  float rate=12;
+  int years=3;
+  float interest;
+ };
 class Customer
 {
-public:
-    int acNo, Bal;
-    void getData()
-    {
-        cin >> acNo >> Bal;
-    }
+  public:
+string customername;
+  float customerid;
+  long accountnumber;
+  long balance;
+  
 };
-class Account : public Customer, public Bank
+class Account:public Customer,public Bank
 {
 public:
-    int interest;
-    void put()
-    {
-        interest = 12 * 3 * Bal;
-        interest /= 100;
-        cout << "Customer Name=" << name << endl;
-        cout << "Customer Id=" << id << endl;
-        cout << "Account No=" << acNo << endl;
-        cout << "Account Balance=" << Bal << endl;
-        cout << "Interest=" << interest;
-    }
+void get()
+{
+cin>>customername>>customerid>>accountnumber>>balance;
+}
+void put()
+{
+cout<<"Customer Name="<<customername<<endl;
+cout<<"Customer Id="<<customerid<<endl;
+cout<<"Account No="<<accountnumber<<endl;
+cout<<"Account Balance="<<balance<<endl;
+cout<<"Interest="<<interest;
+}
+void calcint()
+{
+interest= balance*rate*years/100;
+}
 };
 int main()
 {
-    Account obj;
-    obj.get();
-    obj.getData();
-    obj.put();
-    return 0;
+Account a;
+  a.get();
+  a.calcint();
+  a.put();
+  return 0;
 }

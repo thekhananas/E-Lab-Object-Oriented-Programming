@@ -37,11 +37,7 @@ int main() {
    Distance D1(m,n);
    +D1;
     D1.displayDistance();
-   -D1;                     // apply negation
-   D1.displayDistance();    // display D1
-
-   //-D2;                     // apply negation
-   //D2.displayDistance();    // display D2
-
+   -D1;                     
+   D1.displayDistance();    
    return 0;
 }

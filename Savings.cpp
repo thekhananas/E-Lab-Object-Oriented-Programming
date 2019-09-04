@@ -11,19 +11,19 @@ public:
        rupees=r;
        paise=p;
    }
-Money operator +(Money b) {
+Money operator +(Money o) {
 Money res(0,0);
-res.paise=paise+b.paise;
+res.paise=paise+o.paise;
 res.rupees=res.paise/100;
 res.paise=res.paise%100;
-res.rupees=res.rupees+rupees+b.rupees;
+res.rupees=res.rupees+rupees+o.rupees;
 //cout<<res.rupees<<res.paise;
 return res;
 }
-Money operator -(Money b) {
+Money operator -(Money o) {
 Money res(0,0);
-res.paise=paise-b.paise;
-res.rupees=rupees-b.rupees;
+res.paise=paise-o.paise;
+res.rupees=rupees-o.rupees;
 return res;
 }
 void print()

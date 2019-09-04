@@ -1,40 +1,36 @@
 #include <iostream>
 using namespace std;
-
-class A
+class A{
+public:
+  int x;
+};
+class B:public A
 {
 public:
-    int x;
+void getvalue()
+   {
+     cin>>x;
+   }
 };
-class B : public A
-{
-public:
-    B()
-    {
-        cin >> x;
-    }
+class C{
+  public:
+  int y;
+  void getvalue2(){
+  cin>>y;
+  } 
+}; 
+class D:public B,public C{
+  public:
+  int sum;
+  void getsum(){
+    sum=x+y;
+  cout<<"Sum= "<<sum;
+  }
 };
-class C
-{
-public:
-    int y;
-    C()
-    {
-        cin >> y;
-    }
-};
-class D : public B, public C
-{
-public:
-    void sum()
-    {
-        cout << "Sum= " << x + y;
-    }
-};
-
-int main()
-{
-    D obj;
-    obj.sum();
-    return 0;
+int main() {
+class D q;
+q.getvalue();
+q.getvalue2();
+  q.getsum();
+	return 0;
 }

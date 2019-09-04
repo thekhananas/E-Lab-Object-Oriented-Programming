@@ -1,66 +1,34 @@
-<<<<<<< HEAD
-//concatenate
-
-#include <iostream>
-#include <cstring>
+#include<iostream>
+#include<cstring>
 using namespace std;
-
 class concatenate
 {
 private:
-    char str[100];
 
-public:
-    void read()
-    {
-        cin >> str;
-    }
+           char str[30];
+   public:
 
-    void display()
-    {
-        cout << str;
-    }
+          void read()
+          {
 
-    concatenate operator+(concatenate obj2)
-    {
-        concatenate temp;
-        strcpy(temp.str, str);
-        //strcat(temp.str,str);
-        strcat(temp.str, obj2.str);
-        return temp;
-    }
+                cin>>str;
+
+          }
+          void display()
+          {
+              cout<<"\n"<<str;
+          }
+          void operator += (concatenate str1)
+          {
+            strcat(str,str1.str);
+            cout<<str;
+          }
 };
-
 int main()
 {
-    concatenate obj;
-    concatenate obj2, obj3;
-    obj.read();
-    obj2.read();
-    obj3 = obj + obj2;
-    obj3.display();
+    concatenate a,b;
+    a.read();
+    b.read();
+    a+=b;
     return 0;
 }
-=======
-#include <iostream>
-using namespace std;
-class concatenate
-{
-  public:
-  string a,b;
-  void read()
-  {
-    cin>>a>>b;
-  }
- void operator+()
- {
-   cout<<a<<b;
- }
-};
-int main() {
-	concatenate obj;
-  obj.read();
-  + obj;
-	return 0;
-}
->>>>>>> 6c587fe6e2dc042f6a0482e1b1be974a11f09bbc
