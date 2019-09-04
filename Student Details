@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class student
+{
+  public:
+  string name;int rollno;float height,weight;
+  student()
+  {
+    name.assign("Nikhil");
+    rollno=20;
+    height=165.5;
+    weight=58.2;
+  }
+  void read()
+  {
+    getline(cin,name,' ');
+    cin>>rollno>>height>>weight;
+  }
+  void display()
+  {
+    cout<<name<<" "<<rollno<<" "<<height<<" "<<weight<<endl;
+  }
+};
+int main() {
+ student s1,s2;
+  s1.read();
+  s1.display();
+  s2.display();
+  return 0;
+}
