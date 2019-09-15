@@ -11,7 +11,7 @@ public:
   }
 };
 
-class Square : public Number
+class Square:public Number
 {
 public:
   int getSquare()
@@ -21,7 +21,7 @@ public:
   }
 };
 
-class Cube : public Number
+class Cube:public Number
 {
 public:
   void getCube()
