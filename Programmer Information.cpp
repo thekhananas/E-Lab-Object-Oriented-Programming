@@ -21,7 +21,7 @@ public:
     }
 };
 
-class employee : public person
+class employee:public person
 {
     char company[100];
     float salary;
@@ -41,7 +41,7 @@ public:
     }
 };
 
-class programmer : public employee
+class programmer:public employee
 {
     int number;
 
