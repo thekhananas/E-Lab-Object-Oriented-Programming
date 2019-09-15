@@ -20,7 +20,7 @@ public:
     cin >> mark3;
   }
 };
-class statement : public student, public sports
+class statement:public student,public sports
 {
 public:
   void display()
