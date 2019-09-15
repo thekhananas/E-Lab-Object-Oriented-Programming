@@ -1,3 +1,4 @@
+  
 #include <iostream>
 using namespace std;
 
@@ -6,7 +7,7 @@ class A
 public:
     int x;
 };
-class B : public A
+class B:public A
 {
 public:
     B()
@@ -23,7 +24,7 @@ public:
         cin >> y;
     }
 };
-class D : public B, public C
+class D:public B,public C
 {
 public:
     void sum()
