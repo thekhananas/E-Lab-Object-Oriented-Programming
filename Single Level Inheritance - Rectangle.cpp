@@ -1,5 +1,6 @@
-#include <iostream> // programm is not working
+#include <iostream>
 using namespace std;
+
 class A
 {
 public:
@@ -9,6 +10,7 @@ public:
     cin >> x;
   }
 };
+
 class B
 {
 public:
@@ -18,23 +20,31 @@ public:
     cin >> y;
   }
 };
-class C : public A, public B
+
+class C:public A,public B
 {
 public:
-  int sum, mul;
+ int s, m;
+  C ()
+  {
+  getxval();
+  getyval();
+  }
   void sum()
   {
-    sumx + y;
-    cout << "Sum = " << sum;
+    s = x + y;
+    cout << "Sum = " <<s<<endl;
   }
   void mul()
   {
-    mul = x * y;
-    cout << "Product=" << mul;
+    m = x * y;
+    cout << "Product=" <<m;
   }
-} obj;
+};
+
 int main()
 {
+  C obj;
   obj.sum();
   obj.mul();
   return 0;
