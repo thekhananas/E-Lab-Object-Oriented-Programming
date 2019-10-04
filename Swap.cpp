@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-template <class T>
-void Swap(T &x, T &y)
+template<class T>
+void Swap(T &x,T &y)
 {
     T temp;
     temp = x;
