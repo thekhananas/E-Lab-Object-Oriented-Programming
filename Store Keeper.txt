@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+class Store
+{
+  public:
+
+  int itemcount(int id){
+  	cout<<id<<endl;
+    return 0;
+  }
+  int itemcount(int totalval, int consumed){
+
+    int x = totalval - consumed; 
+  	 cout<<x;
+    return 0;
+  }
+};
+    
+  
+  
+int main() {
+  
+  int z,p,q;
+  cin>>q;
+  cin>>p;
+  cin>>z;
+ 
+  Store ob;
+  ob.itemcount(q);
+  ob.itemcount(p,z);
+  return 0;
+}
