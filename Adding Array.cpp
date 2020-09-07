@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-template <class T>
+
+template<class T>
 T sum(T arr[])
 {
   T s;
@@ -8,6 +9,7 @@ T sum(T arr[])
     s = s + arr[i];
   cout << s << endl;
 }
+
 int main()
 {
   int arr1[5];
