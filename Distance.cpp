@@ -1,4 +1,4 @@
-#include <iostream>
+ #include <iostream>
 using namespace std;
 
 class Distance
@@ -13,7 +13,7 @@ public:
         cin >> feet >> inches;
     }
 
-    Distance operator+(Distance sec)
+    Distance operator +(Distance sec)
     {
         Distance temp;
         temp.feet = feet + sec.feet + ((inches + sec.inches) / 12);
