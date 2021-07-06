@@ -23,7 +23,7 @@ public:
     }
 };
 
-class C : public A, public B
+class C:public A,public B
 {
 public:
     void display()
