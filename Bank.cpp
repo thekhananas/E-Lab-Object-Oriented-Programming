@@ -19,7 +19,7 @@ public:
         cin >> acNo >> Bal;
     }
 };
-class Account : public Customer, public Bank
+class Account:public Customer,public Bank
 {
 public:
     int interest;
